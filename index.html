@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Футуролог и Концепт-Художник</title>
-    
+
     <link rel="stylesheet" href="style.css">
 
     <style>
-        h1 {
-            text-transform: uppercase;
+        h1, h2, h3 {
+            font-family: var(--font-headings, 'Courier New', Courier, monospace);
             letter-spacing: 2px;
+            text-transform: uppercase;
         }
     </style>
 </head>
-
-<body style="background: linear-gradient(to bottom, #0a192f, #00d4ff); color: white; font-family: Arial, sans-serif; min-height: 100vh;">
+<body>
 
     <header>
-        <h1>Невзоров Артем</h1>
+        <h1 class="text-outline">Невзоров Артем</h1>
         <p>Футуролог и Концепт-Художник</p>
     </header>
 
     <aside>
-        <!-- Span для демонстрации absolute positioning -->
-        <span>BADGE</span> 
         <h2>Технология будущего</h2>
         <p>Квантовый Интернет: технология, которая изменит мир.</p>
     </aside>
 
     <main>
-        <img src="avatar.jpg" alt="Концепт-арт города будущего" width="300" height="200">
+        <img src="avatar.jpg"
+             alt="Концепт-арт города будущего" 
+             width="300" height="200">
 
-        <section>
+        <section class="card" style="overflow: hidden;">
+            <span class="card-id"> 01</span>
             <h2>Навыки прогнозирования</h2>
             <ul>
                 <li>Создание концепт-артов</li>
@@ -40,7 +41,8 @@
             </ul>
         </section>
 
-        <section>
+        <section class="card">
+            <span class="card-id"> 02</span>
             <h2>Футуристические концепты</h2>
             <ol>
                 <li>Города будущего</li>
@@ -49,7 +51,7 @@
             </ol>
         </section>
 
-        <section>
+        <section class="card">
             <h2>Связаться со мной</h2>
             <form action="#" method="POST">
                 <label>Имя:<br>
@@ -69,14 +71,9 @@
         </section>
     </main>
 
-     <aside>
-        <span>BADGE</span> 
-        <h2>Технология будущего</h2>
-        <p>Квантовый Интернет: технология, которая изменит мир.</p>
-    </aside>
-
     <footer>
         <p>&copy; 2026 Невзоров Артем</p>
+        <p><a href="https://cyberpunk.fandom.com" target="_blank">Терминал данных (Внешняя ссылка)</a></p>
     </footer>
 
 </body>
